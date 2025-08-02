@@ -44,6 +44,6 @@ def predict_message(msg):
     prediction  = model.predict(vector)
     return "Spam" if prediction == 0 else "Not Spam"
 
-#Example
+#sample message
 test_msg = "Congratulations! You've won MK1000000, call 0912345678 to collect your money."
 print(f"Test Message: '{test_msg}' Prediction: '{predict_message(test_msg)}'")
